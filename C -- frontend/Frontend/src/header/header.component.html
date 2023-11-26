@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+<body>
+    <header class="container-fluid">
+        <h1><a href="/home">Ћирили.цом</a></h1>
+    <nav>
+        <ul class="linkovi">
+            <li>
+                <a href="/resources">Ресурси</a>
+            </li>
+            <li>
+                <a href="/design">Дизајн</a>
+            </li>
+            <li>
+                <a href="/development">Развој</a>
+            </li>
+            <li>
+                <a href="/convert">Конвертуј</a>
+            </li>
+        </ul>
+    </nav>
+    <a *ngIf="!isAuthenticated" (click)="goToLogIn()"><button>Пријави се</button></a>
+    <a *ngIf="isAuthenticated" (click)="logout()"><button>Одјави се</button></a>
+</header>
+</body>
+</html>

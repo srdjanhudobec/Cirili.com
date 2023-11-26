@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<main>
+    <app-header></app-header>
+    <h2>Развој</h2>
+
+            <div *ngFor="let podaci of posts" class="box">
+                <div class="detalji">
+                    <h3><a>{{ podaci.title }}</a></h3>
+                    <div class="pod-detalji">
+                    <p>{{ podaci.content }}</p>
+                    </div>
+                </div>
+            </div>
+
+</main>
+<app-footer></app-footer>
+</body>
+</html>

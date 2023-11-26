@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Home</title>
+</head>
+<body>
+    <header class="container-fluid">
+            <h1>Ћирили.цом - Админ</h1>
+        <div class="opcije">
+            <nav>
+            <ul class="linkovi">
+                <li>
+                    <a href="create-post">Нова објава</a>
+                </li>
+                <li>
+                    <a href="edit-post">Обриши или измени објаву</a>
+                </li>
+            </ul>
+        </nav> 
+            <button (click)="odjava()">Одјави се</button>
+        </div>
+    </header>
+    <section class="container">
+        <table class="razvoj">
+            <tr>
+                <th>Развој</th>
+            </tr>
+            <tr *ngFor="let podatak of podaciRazvoj">
+                <td>{{podatak.title}}</td>
+            </tr>
+        </table>
+        <table class="dizajn">
+            <tr>
+                <th>Дизајн</th>
+            </tr>
+            <tr *ngFor="let podatak of podaciDizajn">
+                <td>{{podatak.title}}</td>
+            </tr>
+        </table>
+        <table class="resursi">
+            <tr>
+                <th>Ресурси</th>
+            </tr>
+            <tr *ngFor="let podatak of podaciResursi">
+                <td>{{podatak.title}}</td>
+            </tr>
+        </table>
+    </section>
+</body>
+</html>

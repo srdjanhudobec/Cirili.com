@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+  }
+  
+  :root {
+    --primary-color: #303030;
+    --resursi: #100ea1;
+    --dizajn: #530f97;
+    --razvoj: #0f912f;
+  }
+  
+  body {
+    background-color: #ffebb7;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #303030;
+  }
+  
+  h1{
+    margin-left: -50px;
+    cursor: pointer;
+    transition: all 0.3s ease  0s;
+  }
+  
+  h1:hover{
+    transition: all 0.3s ease  0s;
+    transform: translateY(-3px);
+  }
+  
+  .opcije{
+    display: flex;
+    align-items: center;
+  }
+  
+  .linkovi{
+    list-style: none;
+  }
+  
+  .linkovi li{
+    display: inline-block;
+    padding: 0px 20px;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .linkovi li a{
+    transition: all 0.3s ease  0s;
+  }
+  
+  .linkovi li:hover{
+    color: #DBC8AC;
+    transform: translateY(-3px);
+  } 
+  
+  button{
+    padding:  9px 25px;
+    background-color: #fde199;
+    border: none;
+    border-radius: 50px;
+    cursor:pointer;
+    transition: all 0.3s ease 0s;
+  }
+  
+  button:hover{
+    background-color: rgba(219, 200, 172,0.6);
+    transform: translateY(-5px);
+  }
+  
+  .container {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7%;
+  }
+  
+  table {
+    width: 300px;
+    margin: 50px 20px 0 30px;
+    border-radius: 10px; 
+  }
+  
+  th {
+    padding: 30px;
+    text-align: center;
+    border-radius: 30px;
+  }
+  
+  td{
+    border: 2px solid #303030;
+    padding: 30px;
+    text-align: center;
+    border-radius: 30px;
+  
+    &:hover{
+        background-color: white;
+        color: #303030;
+        transition: all 0.5s ease;
+    }
+  }
+  
+  .razvoj{
+    background-color: #0f912f;
+  }
+  
+  .dizajn{
+    background-color: rgb(97, 1, 90);
+  }
+  
+  .resursi{
+    background-color: rgb(1, 70, 117);
+  }
+
+  body{
+    height: 750px;
+  }
+

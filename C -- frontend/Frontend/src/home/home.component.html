@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"> -->
+</head>
+<body>
+    <app-header></app-header>
+    <header class="page-header">
+        <div class="container pt-3">
+            <div class="row align-items-center justify-content-center">
+                <div class="col col-md-5 content">
+                    <h2>Неке од задњих објава</h2>
+                    <p class="custom-paragraph">Погледајте најновије објаве на нашем сајту</p>
+                </div>
+
+                <div class="col col-md-5">
+                    <h2>Објаве</h2>
+                    <div class="card-holder" *ngFor="let post of posts">
+                        <div class="card mb-3 clickable-post">
+                            <div class="card-body">
+                                <h5 class="card-title">{{post.title}}</h5>
+                                <!-- <p class="card-text">{{post.content}}</p> -->
+                            </div>
+                        </div>
+                        <!-- <div class="card mb-3 clickable-post">
+                            <div class="card-body">
+                                <h5 class="card-title">Име</h5>
+                                <p class="card-text">Садржај</p>
+                            </div>
+                        </div>
+                        <div class="card mb-3 clickable-post">
+                            <div class="card-body">
+                                <h5 class="card-title">Име</h5>
+                                <p class="card-text">Садржај</p>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <app-footer></app-footer>
+ 
+</body>
+</html>

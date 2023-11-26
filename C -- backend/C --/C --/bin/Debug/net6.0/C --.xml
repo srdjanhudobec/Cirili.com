@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>C --</name>
+    </assembly>
+    <members>
+        <member name="M:C___.Controllers.AuthController.Login(C___.DTOs.User.LogInRequest)">
+            <summary>
+            Login
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C___.Controllers.AuthController.Register(C___.DTOs.User.UserPostRequest)">
+            <summary>
+            Register user
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C___.Controllers.PostController.createPost(C___.DTOs.Post.PostPostRequest)">
+            <summary>
+            Create post
+            </summary>
+            <param name="post"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C___.Controllers.PostController.getPosts">
+            <summary>
+            Get all posts
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C___.Controllers.PostController.getPostByTitle(System.String)">
+            <summary>
+            Get post by title
+            </summary>
+            <param name="title"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C___.Controllers.PostController.getPostByCategory(System.String)">
+            <summary>
+            Get post by category
+            </summary>
+            <param name="category"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C___.Controllers.PostController.deletePost(System.String)">
+            <summary>
+            Delete post by title
+            </summary>
+            <param name="title"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C___.Controllers.PostController.updatePost(System.String,C___.DTOs.Post.PostPutRequest)">
+            <summary>
+            Edit post by entering title of post
+            </summary>
+            <param name="title"></param>
+            <param name="post"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

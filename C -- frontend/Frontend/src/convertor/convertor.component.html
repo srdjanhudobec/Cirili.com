@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+      <app-header></app-header>
+
+  <div class="konverter">
+  <h1>Латиница у Ћирилицу</h1>
+  <textarea id="inputText" class="inputText" placeholder="Унесите текст на латиници овде"></textarea><br>
+  <button id="convertButton" class="dugme" (click)="konvertuj()">Konvertuj</button><br>
+  <textarea id="outputText"  class="outputText" placeholder="Резултат конверзије ће се приказати овде" readonly></textarea>
+</div>
+
+<app-footer></app-footer>
+</body>
+</html>

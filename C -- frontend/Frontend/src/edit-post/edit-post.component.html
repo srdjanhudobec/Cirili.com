@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Нови пост</title>
+</head>
+<body>
+    <header class="container-fluid">
+        <h1><a style="color: white;" href="#">Ћирили.цом - Админ</a></h1>
+    <div class="opcije">
+        <button id="logout" (click)="odjava()">Одјави се</button>
+    </div>
+</header>
+    <section class="forma">
+        <div class="container">
+            <form>
+                <label for="banner">Наслов:</label>
+                <input style="font-weight: bold;" type="text" id="name" name="name" required [(ngModel)]="naslov">
+
+                <label for="message">Садржај:</label>
+                <textarea id="message" name="message" rows="7" required [(ngModel)]="sadrzaj"></textarea>
+
+                <div class="btn">
+                    <button class="submit" (click)="obrisi()">Обриши</button>
+                    <button class="submit" (click)="izmeni()">Измени</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
